@@ -1,0 +1,175 @@
+:root {
+  /* Color Palette */
+  /* --color-primary: #007bff;
+	--color-secondary: #6c757d;
+	--color-success: #28a745;
+	--color-danger: #dc3545;
+	--color-warning: #ffc107;
+	--color-info: #17a2b8;
+	--color-light: #f8f9fa;
+	--color-dark: #343a40; */
+
+  /* Typography */
+  --ff-primary: 'Kodchasan', sans-serif;
+  --ff-secondary: 'Inter', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: var(--ff-primary);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.site-wrapper {
+  display: flex;
+  border: 1px solid red;
+  min-height: 100vh;
+}
+
+.sidebar {
+  flex: 1;
+  border: 1px solid red;
+}
+
+@media(max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: 20px;
+  gap: 15px;
+}
+
+main {
+  flex: 5;
+}
+
+.list,
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-title,
+.gallery-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 30px 60px;
+}
+
+.gallery-image{
+  max-height: fit-content;
+  object-fit: center;
+}
+
+/* Gallery: Tablet */
+@media(max-width: 800px) {
+  .gallery-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Gallery: Mobile */
+@media(max-width: 400px) {
+  .gallery-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.list-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 60px;
+}
+
+.list-info {
+  display: flex;
+  gap: 10px;
+}
+
+.list-image {
+  width: 3%;
+  min-width: 30px;
+}
+
+
+
+.list-info-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+@media(max-width: 800px) {
+  .list-image {
+    width: 60px;
+  }
+
+  .list-image>img {
+    max-width: 60px;
+  }
+
+  .list-info-detail>h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* .note-tile{
+  display: flex;
+} */
