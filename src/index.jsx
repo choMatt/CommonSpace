@@ -7,9 +7,11 @@ import {
   Route,
 } from "react-router-dom"
 import Layout from './components/Layout';
-import Home from './components/Home';
+import Home from './pages/Gallery/GalleryView';
 import "./App.css"
-import ListView from './components/ListView';
+import ListView from './pages/List/ListView';
+
+import "./server"
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Layout />}>

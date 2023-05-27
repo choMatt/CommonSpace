@@ -85,3 +85,26 @@ nav {
 main {
   flex: 5;
 }
+
+.gallery{
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery-links{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+/* .note-tile{
+  display: flex;
+} */
