@@ -73,6 +73,12 @@ a{
   border: 1px solid red;
 }
 
+@media(max-width: 800px){
+  .sidebar {
+    display: none;
+  }
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -86,11 +92,13 @@ main {
   flex: 5;
 }
 
+.list,
 .gallery{
   display: flex;
   flex-direction: column;
 }
 
+.list-title,
 .gallery-title{
   display: flex;
   align-items: center;
@@ -103,6 +111,40 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   padding: 30px 60px;
+}
+
+@media(max-width: 800px){
+  .gallery-links{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 400px){
+  .gallery-links{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.list-links{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 60px;
+}
+
+.list-info{
+  display: flex;
+  gap: 10px;
+}
+
+.list-image{
+  width: 3%;
+  min-width: 30px;
+}
+
+.list-info-detail{
+  display: flex;
+  flex-direction: column;
 }
 
 /* .note-tile{
