@@ -157,11 +157,6 @@ main {
 }
 
 @media(max-width: 800px) {
-  .list-links {
-    width: 100%;
-  }
-
-
   .list-image {
     width: 60px;
   }
