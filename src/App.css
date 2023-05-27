@@ -113,6 +113,11 @@ main {
   padding: 30px 60px;
 }
 
+.gallery-image{
+  max-height: fit-content;
+  object-fit: center;
+}
+
 /* Gallery: Tablet */
 @media(max-width: 800px) {
   .gallery-links {
@@ -144,6 +149,8 @@ main {
   min-width: 30px;
 }
 
+
+
 .list-info-detail {
   display: flex;
   flex-direction: column;
@@ -151,15 +158,9 @@ main {
 
 @media(max-width: 800px) {
   .list-links {
-    justify-content: center;
-    align-items: center;
     width: 100%;
   }
 
-  .list-info {
-    justify-content: center;
-    align-items: center;
-  }
 
   .list-image {
     width: 60px;
